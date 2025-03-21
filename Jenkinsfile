@@ -21,6 +21,13 @@ pipeline
            sh 'mvn -f /var/lib/jenkins/workspace/three/javawar/pom.xml install'
         }
        }
+       stage('3')
+       {
+           steps
+          {
+              sh 'cp -R /var/lib/jenkins/workspace/three/javawar/target/*.war /opt/apache-tomcat-9.0.100/webapps'
+          }
+       }
    
      }
         
