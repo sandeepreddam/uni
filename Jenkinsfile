@@ -7,7 +7,7 @@ pipeline
   }
     stages
   { 
-      stage('1)
+      stage('1')
             {
                sh 'git clone https://github.com/RavitejaAdepudi/javawar.git'
             }
