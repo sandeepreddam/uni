@@ -9,12 +9,14 @@ pipeline
   { 
       stage('1')
             {
+               steps
+               {
                sh 'git clone https://github.com/RavitejaAdepudi/javawar.git'
+               }
             }
-        stage('2')
-            {
-              sh 'mvn install'
-            }
+   
+     }
         
   }
-}
+   
+
