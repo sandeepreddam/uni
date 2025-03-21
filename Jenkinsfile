@@ -18,7 +18,7 @@ pipeline
         {
               steps
         {
-           sh 'mvn -f /var/lib/jenkins/workspace/three/javawar/pom.xml
+           sh 'mvn -f /var/lib/jenkins/workspace/three/javawar/pom.xml install'
         }
        }
    
